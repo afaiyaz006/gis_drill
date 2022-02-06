@@ -7,10 +7,10 @@ with st.form(key="amar_form"):
     submit_button=st.form_submit_button(label='Submit')
 
 if submit_button:
-    longi,lat=text_input.split(',')
+    lat,longi=text_input.split(',')
     st.write(f"Submitted this: {text_input}")
     st.write(f"longitude is {float(longi)}")
     st.write(f"lattitude is {float(lat)}")
-    output=gis_process.process(float(longi),float(lat))
+    output=gis_process.process(float(lat),float(longi))
     st.write(output)
     
