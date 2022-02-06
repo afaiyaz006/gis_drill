@@ -1,0 +1,2 @@
+geopandas==0.10.2
+streamlit==1.5.0
