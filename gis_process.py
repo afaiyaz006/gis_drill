@@ -3,7 +3,6 @@ from shapely.geometry import Polygon, LineString, Point
     
 def process(lat,longi):
     fp="bgd_nhr_drought_barc/bgd_nhr_drought_sparsso.shp"
-    fp=open(fp)    
     data=gpd.read_file(fp)
     point=Point(longi,lat)
     l=data.contains(point)
