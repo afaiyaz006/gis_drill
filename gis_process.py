@@ -1,5 +1,5 @@
 import geopandas as gpd
-from shapely.geometry import Polygon, LineString, Point
+from shapely.geometry import Point
     
 def process(lat,longi):
     
