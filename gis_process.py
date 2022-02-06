@@ -12,8 +12,8 @@ def process(lat,longi):
             found=i
             break
 
-    thana_name=data.loc[i,'THANA_NAME']
-    drought_class=data.loc[i,'DROU_CLASS']
-    drought_class_name=data.loc[i,'DROUGHT_CL']
+    thana_name=data.loc[found,'THANA_NAME']
+    drought_class=data.loc[found,'DROU_CLASS']
+    drought_class_name=data.loc[found,'DROUGHT_CL']
     return f"Thana Name: {thana_name} \nClass: {drought_class} \nType: {drought_class_name}"
 
